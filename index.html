@@ -316,7 +316,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, nesciunt.
 
         <!-- Contact Section-->
  
-           <!-- Gform contact
+          <!-- Gform contact -->
           <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmI_aUfEgcmpkgOrMlRLsRBj7k4aKKy1tWyuh7I744yVf2kA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
               Name:<br>
                <input type="text" name="entry.1597338776" id="entry.1597338776"><br>
@@ -327,7 +327,6 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, nesciunt.
                <input type="submit" value="submit">
          </form>
          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            -->
 
 
 </div>
@@ -349,66 +348,16 @@ Created by <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/sy
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
    <!-- Js.Gform -->
-   <!-- <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
     $('#gform').on('submit', function(e) {
       $('#gform *').fadeOut(2000);
       $('#gform').prepend('Your submission has been processed...');
      });
-   </script> -->
+   </script>
 
 
-<!-- SMTP.js -->
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-
-      <script>  
-
-         function sendmail(){
-    
-			var name = $('#Name').val();
-			var email = $('#Sender').val();
-			var subject = $('#Subject').val();
-         var message = $('#Message').val();
-
-			// var body = $('#body').val();
-
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
-			//console.log(name, phone, email, message);
-
-			Email.send({
-                                SecureToken:"364f5ca7-383a-4668-89b1-67144c3215d0",
-                                Host: "smtpjs.com",
-				Username: 'ultramansyarifudin0015@gmail.com",
-				Password: "password",
-				To: "ultramansyarifudin0015@gmail.com",
-				From: "adeghnifabawel@gmail.com",
-				Subject: "New message on contact from "+name,
-				Body: Body
-			}).then(
-				message =>{
-					//console.log (message);
-					if(message=='OK'){
-					alert('Your mail has been send. Thank you for connecting.');
-					}
-					else{
-						console.error (message);
-						alert('There is error at sending message. ')	
-					}
-
-				      }
-			          );
-
-		}
-
-
-      </script>
-
-     <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
 
 <!-- AOS.JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
